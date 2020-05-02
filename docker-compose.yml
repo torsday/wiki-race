@@ -1,0 +1,8 @@
+version: "3.5"
+services:
+  go:
+    container_name: wiki-race-go-cont
+    build: .
+    ports:
+      - 8083:8083
+    restart: on-failure
